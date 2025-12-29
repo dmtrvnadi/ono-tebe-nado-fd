@@ -1,22 +1,10 @@
-/*h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}*/
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 92px 50px 96px 50px;
+  padding: 92px 50px 96px;
 }
 
 .header__logo {
@@ -51,24 +39,23 @@ ul {
   color: #fff;
 }
 
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1; 
+  pointer-events: none;
+} 
+
 .cover {
   position: relative;
-  padding: 165px 50px 50px 50px;
+  padding: 165px 50px 50px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: 757px;
 }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1; 
-} 
 
 .cover__content {
   position: relative;
@@ -121,5 +108,87 @@ ul {
   background-color: transparent;
   color: #fff;
   text-transform: uppercase;
+  border: 1px solid #fff;
+  font: inherit;
+  cursor: pointer;
 }
 
+.lots {
+  padding: 180px 24px 120px 24px;
+}
+
+.lots__title {
+  padding: 180px 27px 40px;
+  color: #000;
+  font-size: 40px;
+  text-transform: uppercase;
+
+}
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 27px;
+  height: 100%;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card__title {
+  position: relative;
+  z-index: 2;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.card__text {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.lots__look-more-link {
+  color: #000;
+  font-size: 20px;
+  text-decoration: underline;
+  padding-top: 30px;
+  padding-left: 30px;
+  font-weight: normal;
+}
