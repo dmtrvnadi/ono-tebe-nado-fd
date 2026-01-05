@@ -165,7 +165,7 @@
   grid-template-columns: repeat(3, 334px);
   color: #fff;
   gap: 25px;
-  padding-top: 27px;
+  padding-top: 28px;
 }
 
 .lots__card-list-item {
@@ -254,6 +254,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 180px;
+  margin-bottom: 82px;
 }
 
 .footer__address {
@@ -275,7 +276,7 @@
   justify-content: end;
   list-style: none;
   gap: 48px;
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .footer__social-icon {
